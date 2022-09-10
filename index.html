@@ -12,12 +12,12 @@
         <header aria-label="Cabeçalho da página">
 
             <audio id="music" autoplay>
-                <source src="assets/musics/normal-world.mpeg" aria-details="Audio do site" />
+                <source src="/musics/normal-world.mpeg" aria-details="Audio do site" />
             </audio>
 
             <div class="header-content">
                 <!-- <button class= "sound-button">On / Off</button> -->
-                <img class="invert-element" src="/assets/images/banner/logo.svg" alt="Imagem principal">
+                <img class="invert-element" src="//images/banner/logo.svg" alt="Imagem principal">
                 <p class="invert-element" role="text">
                     Uma jornada para quem não tem medo do desconhecido. O caminho para o Mundo invertido é incerto, repleto de obstáculos e perigos. Porém, a recompensa é grande: salvar Hawkings e o mundo todo das garras de Vecna. Você está preparado? Então clique no botão abaixo para entrar no Mundo Invertido!
                 </p>
@@ -43,7 +43,7 @@
 
                 <img
                     class="invert-element"
-                    src="/assets/images/content/inverted-world.png" 
+                    src="//images/content/inverted-world.png" 
                     alt="Imagem ilustrativa do mundo invertido"
                 />
             </section>
@@ -77,13 +77,13 @@
                     <h2>A segunda série mais assistida da Netflix</h2>
                     <div class="gallery-container" role="gallery">
                         <div class="gallery-image invert-element">
-                            <img src="/assets/images/content/serie-image-01.png" alt="Imagem de Vecna">
+                            <img src="//images/content/serie-image-01.png" alt="Imagem de Vecna">
                         </div>
                         <div class="gallery-image invert-element">
-                            <img src="/assets/images/content/serie-image-02.png" alt="Imagem ilustrativa dos amigos de Eleven">
+                            <img src="//images/content/serie-image-02.png" alt="Imagem ilustrativa dos amigos de Eleven">
                         </div>
                         <div class="gallery-image invert-element">
-                            <img src="/assets/images/content/serie-image-03.png" alt="Imagem Eleven assustada">
+                            <img src="//images/content/serie-image-03.png" alt="Imagem Eleven assustada">
                         </div>
                     </div>
                 </div>
@@ -126,10 +126,10 @@
             <p>
                 Projeto construído para fins didáticos, executado por Elisa Pazzini, com o objetivo de colocar em prática os conhecimentos de HTML, CSS e JavaScript aprendidos na Dio, em lives transmitidas nos dias 23, 24 e 25 de Setembro de 2022.
             </p>
-            <img src="/assets/images/footer/logo.svg" alt="Logotipo Dio">
+            <img src="//images/footer/logo.svg" alt="Logotipo Dio">
         </footer>
 
-        <script type="module" src="assets/js/main.js"></script>
+        <script type="module" src="/js/main.js"></script>
         <script>
             window.addEventListener('click', function(){
                 const audio = document.getElementById('music');
@@ -145,7 +145,7 @@
                const music = theme === 'light-theme' ? 'normal-world.mpeg' : 'inverted-world.mpeg';
                
                const audio = document.getElementById('music');
-               audio.src = `assets/musics/${music}`;
+               audio.src = `/musics/${music}`;
                audio.play();
                audio.volume = 0.2;
             }
