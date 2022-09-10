@@ -12,7 +12,7 @@
         <header aria-label="Cabeçalho da página">
 
             <audio id="music" autoplay>
-                <source src="/musics/normal-world.mpeg" aria-details="Audio do site" />
+                <source src="assets/musics/normal-world.mpeg" aria-details="Audio do site" />
             </audio>
 
             <div class="header-content">
@@ -145,7 +145,7 @@
                const music = theme === 'light-theme' ? 'normal-world.mpeg' : 'inverted-world.mpeg';
                
                const audio = document.getElementById('music');
-               audio.src = `/musics/${music}`;
+               audio.src = `assets/musics/${music}`;
                audio.play();
                audio.volume = 0.2;
             }
