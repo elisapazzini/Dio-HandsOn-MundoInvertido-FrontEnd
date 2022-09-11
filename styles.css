@@ -231,7 +231,7 @@ section {
 }
 
 #section-inverted-world .section-texts {
-  width: 46%;
+  width: 60%;
 }
 
 #section-inverted-world .section-texts h1 {
@@ -252,7 +252,6 @@ section {
 
 #section-stranger-things-trailer .video-frame {
   background-color: var(--primary-color);
-
 }
 
 #section-stranger-things-trailer .video-frame iframe {
@@ -323,6 +322,7 @@ section {
   text-align: left;
   margin: 0;
 }
+
 #section-form .form-content h3 span{
   color: var(--primary-color);
 }
@@ -372,6 +372,8 @@ section {
   color: var(--field-background-color);
 }
 
+  /* Footer */
+
 footer {
   padding: 60px 0;
   background-color: var(--footer-background-color);
@@ -409,3 +411,123 @@ footer::after {
   right: -50px;
   transform: rotateZ(10deg);
 }
+
+            /* mobile */
+
+@media (max-width: 920px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5rem;
+    max-width: 60%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  p,
+  input,
+  textarea,
+  label {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 0.8rem; 
+  } 
+
+  /* Header Styles */
+
+  header {
+    max-width: 630px;
+  }
+
+  /* World characters styles*/
+
+  .world-characters {
+    max-width: 400px;
+  }
+
+  .world-characters#bottom-characters {
+    height: 250px;
+  }
+
+  /* Section 01 Inverted World */
+
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 630px;
+    align-items: center;
+  }
+
+  .p-mobile {
+    max-width: 360px;
+  }
+
+  .section-texts {
+    max-width: 360px
+    text-align: center;
+  }
+
+  #section-inverted-world img {
+    margin-top: 20px;
+    max-width: 70%;
+  }
+
+
+  /* Section 02 Trailer */
+
+  #section-stranger-things-trailer .section-texts {
+    text-align: center;
+  }
+
+  #section-stranger-things-trailer .video-frame {
+    margin-bottom: 10px;
+  }
+
+  #section-stranger-things-trailer .video-frame iframe {
+    max-width: 90%;
+}
+
+  /* Section 03 Gallery */
+
+  #section-stranger-things-gallery .gallery-container {
+    gap: 5px;
+    align-items: center;
+    padding: 5px;
+  }
+
+  #section-stranger-things-gallery .gallery-image {
+    width: 150px;
+    height: 150px;
+    outline: 7px
+  }
+
+  /* Section 04 Form */
+
+  #section-form .form-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #section-form .form-content h3 {
+    text-align: center;
+  }
+
+  /* Footer */
+
+  footer::before,
+  footer::after {
+    width: 40%;
+    height: 40%;
+  }
+
+}
+
+
